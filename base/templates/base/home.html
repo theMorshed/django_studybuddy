@@ -1,6 +1,6 @@
 {% extends 'main.html' %}
 {% block content %}
-    Home page
+    <a href="{% url 'create_room' %}">Create a new room</a>
     {% for room in rooms %}
         <div class="single_room">
             <span>@{{ room.host.username }}</span>
